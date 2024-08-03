@@ -1,0 +1,127 @@
+:root {
+    /*** Colors **/
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+
+    /*** Typography **/
+    --fuente-principal: 'Inter', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: var(--White);
+    background-color: var(--Grey-900);
+    padding: 5rem 0;
+}
+
+.container {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: var(--Grey-800);
+    border-radius: 2rem;
+}
+
+img {
+    border-radius: 50%;
+}
+
+h1 {
+    font-weight: 700;
+    margin: 0;
+    font-size: 4rem;
+}
+
+p {
+    color: var(--Green);
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.job-title {
+    color: var(--White);
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 2rem;
+}
+
+li a {
+    display: block;
+    background-color: var(--Grey-700);
+    padding: 2rem 10rem;
+    border-radius: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--White);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+li a:hover{
+    background-color: var(--Green);
+    color: var(--Grey-700);
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+
+
+.attribution {
+    text-align: center;
+    padding: 1rem;
+}
+
+.attribution a{
+    color: var(--Green);
+}
+
+@media (min-width: 480px) {
+
+    body {
+        display: grid;
+        place-content: center;
+        padding: 10rem 0;
+    }
+
+    .container {
+        width: 48rem;
+    }
+}
+
+
+
